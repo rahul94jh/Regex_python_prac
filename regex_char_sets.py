@@ -5,7 +5,7 @@ def find_pattern(text, patterns):
     if re.search(patterns, text):
         return re.search(patterns, text)
     else:
-        return "Not Found!"
+        return "No Match!"
 
 
 # [' and ']'.
