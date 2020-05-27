@@ -9,6 +9,8 @@ items = [
     "image002.jpg",
     "image005.jpg",
     "wallpaper.jpg",
+    "image111.png",
+    "test111.doc",
     "flower.jpg",
     "earth.jpg",
     "monkey.jpg",
