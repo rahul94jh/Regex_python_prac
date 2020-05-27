@@ -1,6 +1,6 @@
 import re
 
-""" GIven list of files, find all the files  which which are of type jpg """
+""" Given list of files, find all the files  which which are of type jpg """
 items = [
     "photos",
     "documents",
@@ -18,7 +18,12 @@ items = [
 # Let's create a string from the list of files
 items = " ".join(items)
 
-# Create a pattern to find all the files with ext .jpg
+# Compile a pattern to find all the files which ends with ext .jpg
 pattern = re.compile(r"(\b\w+[.]jpg\b)")
+# print all the files which have ext jpg
+print(pattern.findall(items))
 
+
+# Compile a pattern to recognise the files with ext jpg and start with word 'image'
+pattern = re.compile(r"(\bimage\w+[.]jpg\b)")
 print(pattern.findall(items))
