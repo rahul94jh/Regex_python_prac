@@ -23,3 +23,17 @@ print(p.search("mmbbc"))  # no match
 
 text = "hibba mumbbbbbaaassa dibbbrugarh namabbbbbbbbbbii bbbittu  asambbbbhab nambbbb"
 print(p.findall(text))
+
+
+"""You have a string which contains a data in the format DD-MM-YYYY.
+ Write a regular expression to extract the date from the string."""
+
+string = "Today’s date is 18-05-2018."
+
+# regex pattern
+pattern = r"\b\d{1,2}-\d{1,2}-\d{4}\b"
+
+# store result
+result = re.search(pattern, string)
+
+print(result)
