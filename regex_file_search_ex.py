@@ -1,5 +1,9 @@
 import re
 
+### Visualize you r regex expression
+### https://regexper.com/#%28%5Cb%5Cw%2B%5B%40%5D%5Ba-z%5D%7B3%2C5%7D%5B.%5Dcom%5Cb%29
+
+
 """ Given list of files, find all the files  which which are of type jpg """
 items = [
     "photos",
